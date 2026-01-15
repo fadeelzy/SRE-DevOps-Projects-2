@@ -1,36 +1,19 @@
-# Deploying HA Infrastructure
+# Deploying Highly-available Infrastructure
 
-This project is part of Udacitys "Site Reliability Engineer".
+
 The project demonstrates how to deploy high-available infrastructure to AWS using Terraform.  
 First step in this project is to deploy the infrastructure that you can run Prometheus and Grafana on. 
 Next we use the servers deployed to create an SLO/SLI dashboard. 
 The code deploys a highly-available infrastructure to AWS in multiple zones using Terrafrom. 
 Beside the monitoring stack deployed on AWS EKS, part of this is an RDS database cluster that has a replica in the alternate zone.
 
-## Open Tasks
+## Tasks
 
 1. Enable VPC to have IPs in multiple availability zones
 2. Configure replication of secondary database (RDS-S) from primary db 
 3. Add a load balancer (ALB) along with VPC for zone 2
 5. Tackle warning "Reference to undefined provider" on main.tf line 41, in module "vpc_west": (aws = aws.usw1)
 
-## Guides & Readings
-
-### Udacity Github Repository
-- [Planning-for-High-Availability-and-Incident-Response](https://github.com/udacity/Planning-for-High-Availability-and-Incident-Response)
-
-### AWS
-- [AWS CLI Configuration basics](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-- [AWS CLI Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
-- [AWS CLI Environment variables to configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
-
-### SRE
-- [Google SRE Book](https://sre.google/sre-book/table-of-contents/)
-- [Building Secure and Reliable Systems - a book by Google](https://google.github.io/building-secure-and-reliable-systems/)
-- [SLI/SLO article](https://thenewstack.io/sre-fundamentals-differences-between-sli-vs-slo-vs-sla/#:~:text=SLI%20(service-level%20indicators)%3A,and%20performing%20up%20to%20standard)
-- [AWS DR strategies](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)
-- [The Role of SREs in Observability](https://rootly.com/blog/the-role-of-sres-in-observability)
-- [Benefits of Observability for Site Reliability Engineers](https://www.harrisonclarke.com/blog-2023/benefits-of-observability-for-site-reliability-engineers)
 
 ## Getting Started
 
@@ -307,5 +290,4 @@ If you want to take your project even further going above and beyond, here are 3
 2. Fail over the RDS instance to the secondary region so it becomes the primary target and the first region becomes the replica
 3. Create an additional AWS module to provision another piece of infrastructure not discussed in the project
 
-## License
-[License](../LICENSE.md)
+
