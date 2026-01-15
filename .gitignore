@@ -1,0 +1,26 @@
+.idea
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/.idea/
+/ec2-keys/
+
+/starter-code/zone1/.terraform.lock.hcl
+/starter-code/zone1/.terraform/modules/modules.json
+/starter-code/zone1/.terraform/terraform.tfstate
+/starter-code/zone1/.terraform/providers/registry.terraform.io/hashicorp/aws/5.4.0/windows_amd64/terraform-provider-aws_v5.4.0_x5.exe
+/starter-code/zone1/.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.21.1/windows_amd64/terraform-provider-kubernetes_v2.21.1_x5.exe
+/terraform.tfstate
+
+/starter-code/zone2/.terraform.lock.hcl
+/starter-code/zone2/.terraform/modules/modules.json
+/starter-code/zone2/.terraform/terraform.tfstate
+/starter-code/zone2/.terraform/providers/registry.terraform.io/hashicorp/aws/5.4.0/windows_amd64/terraform-provider-aws_v5.4.0_x5.exe
+/starter-code/zone2/.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.21.1/windows_amd64/terraform-provider-kubernetes_v2.21.1_x5.exe
+
+
